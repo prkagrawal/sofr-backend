@@ -1,10 +1,11 @@
 {
   "name": "sofr-bk",
   "version": "1.0.0",
+  "main": "app.js",
   "description": "",
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

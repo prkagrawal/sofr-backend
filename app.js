@@ -4,6 +4,11 @@ const morgan = require('morgan');
 
 const app = express();
 
+const {connectDB, db} = require('./bin/mongoDb');
+connectDB();
+
+const port = process.env.PORT || '5000';
+
 // controllers
 // const rootRouter = require('./routes/root');
 // const usersRouter = require('./routes/user');
@@ -21,4 +26,4 @@ app.get('/', (req, res) => {
   res.send("Home");
 });
 
-module.exports = app; 
+app.listen(port, () => console.log(`Server running on port ${port}`));
