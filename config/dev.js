@@ -8,7 +8,7 @@ module.exports = {
         useUnifiedTopology: true,
         useFindAndModify: false,
       },
-      connectionString: process.env.mongoConnectionString,
+      connectionString: process.env.MONGO_URI,
     },
   },
 };
